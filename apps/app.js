@@ -2,6 +2,7 @@ $(function(){
 
 	$("#btn-submit").click(function(event){
 		event.preventDefault();
+		$("#search-results").html('');
 		var query = $("#query").val();
 		getRequest(query);
 
